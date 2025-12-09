@@ -46,12 +46,12 @@ const items = [
 export function AppSidebar() {
   return (
     <Sidebar>
-      <SidebarContent>
-        <SidebarGroup>
-            <img src={logo} alt="" />
-          <SidebarGroupLabel>LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY</SidebarGroupLabel>
+      <SidebarContent >
+        <SidebarGroup className='py-10'>
+            <SidebarGroupLabel><img src={logo} alt="" /></SidebarGroupLabel>
+          <SidebarGroupLabel className='text-[25px] font-bold '>LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className='py-20'>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>

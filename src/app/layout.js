@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <AppSidebar />
       <Nav className=""/>
       <main>
-        <SidebarTrigger />
+       
         {children}
       </main>
     </SidebarProvider>

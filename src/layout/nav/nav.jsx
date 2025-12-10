@@ -16,9 +16,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import avatar from '@/asset/avatar.png';
 import { Button } from "@/components/ui/button"
 
-export default function nav() {
+export default function Nav() {
   return (
-    <div className='bg-background w-full h-[100px] px-8 flex flex-row items-center justify-between shadow-md z-20'>
+    <div className='bg-background w-full h-full flex flex-row items-center justify-between z-20'>
       <div className='flex flex-row items-center gap-2'>
         <img src={logo} alt="" width={30} height={30} />
         <h1 className='font-lex text-primary font-bold text-[30px] '>LAUTECH PORTAL</h1>

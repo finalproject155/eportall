@@ -26,13 +26,15 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         
-           <SidebarProvider>
+      <SidebarProvider>
       <AppSidebar />
-      <Nav className=""/>
-      <main>
+     <div className="flex flex-col w-full">
+       <Nav className=""/>
+      <main className="p-10">
        
         {children}
       </main>
+     </div>
     </SidebarProvider>
       </body>
     </html>

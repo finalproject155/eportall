@@ -11,6 +11,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import Image from "next/image"
  
 // Menu items.
 const items = [
@@ -47,17 +48,19 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent >
-        <SidebarGroup className='py-10'>
-            <SidebarGroupLabel><img src={logo} alt="" /></SidebarGroupLabel>
-          <SidebarGroupLabel className='text-[25px] font-bold '>LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY</SidebarGroupLabel>
+        <SidebarGroup className='py-5'>
+            <div className="flex flex-col gap-2 items-center">
+              <Image src={logo} alt="" />
+          <div className='text-[25px] font-bold '>LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY</div>
+            </div>
           <SidebarGroupContent>
-            <SidebarMenu className='py-20'>
+            <SidebarMenu className='pt-5'>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                <SidebarMenuItem className='py-3' key={item.title}>
+                  <SidebarMenuButton className='hover:bg-primary py-7 hover:text-white' asChild>
                     <a href={item.url}>
-                      <item.icon />
-                      <span>{item.title}</span>
+                      <item.icon width={30} height={30}/>
+                      <span className="text-[23px] font-semibold font-lex  ">{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

@@ -8,19 +8,20 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger,  
 } from "@/components/ui/dialog"
 import logo from "@/asset/logo.png"
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import avatar from '@/asset/avatar.png';
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 
 export default function nav() {
   return (
     <div className='bg-background w-full h-[100px] px-8 flex flex-row items-center justify-between shadow-md z-20'>
       <div className='flex flex-row items-center gap-2'>
-        <img src={logo} alt="" width={30} height={30} />
+        <Image src={logo} alt="" width={60} height={60} />
         <h1 className='font-lex text-primary font-bold text-[30px] '>LAUTECH PORTAL</h1>
       </div>
 
@@ -28,7 +29,7 @@ export default function nav() {
 
 
       <div className='flex flex-row items-center gap-4'>
-         <SidebarTrigger className='w-[40px] h-[40px] '/>
+         <SidebarTrigger className='w-[40px] h-[40px] border-[3px] '/>
         <Bell className='w-[40px] h-[40px] '/>
         <Dialog>
             <DialogTrigger>

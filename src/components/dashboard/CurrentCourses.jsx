@@ -13,7 +13,7 @@ export default function CurrentCourses() {
         {courses.map((course, index) => (
           <div key={index} className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
             <div>
-              <p className="font-semibold text-gray-900">{course.code}: {course.name}</p>
+              <p className="font-semibold text-gray-900 truncate w-[150px] sm:w-full">{course.code}: {course.name}</p>
               <p className="text-sm text-gray-500">{course.professor}</p>
             </div>
             <button className="text-sm font-medium text-primary hover:text-primary-hover">

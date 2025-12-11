@@ -32,7 +32,7 @@ export default function Nav() {
         <Bell className='w-[40px] h-[40px] '/>
         <Dialog>
             <DialogTrigger>
-                 <CircleUserRound className='w-[75px] h-[75px] text-primary cursor-pointer  '/>
+                 <CircleUserRound className='w-[40px] h-[40px] text-primary cursor-pointer '/>
             </DialogTrigger>
             <DialogContent className='w-[400px] h-[300px]'>
               <DialogHeader>

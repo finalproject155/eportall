@@ -26,20 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
-
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4 w-full">
-           <SidebarTrigger className="-ml-1" />
-           <Nav />
-        </header>
-        <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+        <main>
           {children}
         </main>
-      </SidebarInset>
-    </SidebarProvider>
       </body>
     </html>
   );

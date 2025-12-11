@@ -22,7 +22,7 @@ export function middleware(request) {
 // Protect multiple pages
 export const config = {
   matcher: [
-    "/dashboard/:path*", // protect all dashboard pages
+    // "/dashboard/:path*", // protect all dashboard pages
     "/profile/:path*",   // protect profile
     "/settings/:path*",  // protect settings
     "/admin/:path*",     // protect admin

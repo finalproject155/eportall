@@ -16,8 +16,8 @@ import Image from "next/image"
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "#",
+    title: "Dashboard",
+    url: "/dashboard",
     icon: Home,
   },
   {
@@ -49,18 +49,21 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent >
         <SidebarGroup className='py-5'>
-            <div className="flex flex-col gap-2 items-center">
-              <Image src={logo} alt="" />
-          <div className='text-[25px] font-bold '>LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY</div>
+            <div className="flex flex-row gap-4 items-center">
+              <Image src={logo} alt="" width={50} height={50} className="" />
+            <div className="flex flex-col ">
+                  <p className='text-[17px] font-lex font-bold '>LAUTECH PORTAL</p>
+                    <p className='text-[14px] font-lex font-medium text-gray-400 '>E-Portal</p>
+            </div>
             </div>
           <SidebarGroupContent>
             <SidebarMenu className='pt-5'>
               {items.map((item) => (
-                <SidebarMenuItem className='py-3' key={item.title}>
-                  <SidebarMenuButton className='hover:bg-primary py-7 hover:text-white' asChild>
+                <SidebarMenuItem className='py-2' key={item.title}>
+                  <SidebarMenuButton className='hover:bg-primary py-3 hover:text-white' asChild>
                     <a href={item.url}>
                       <item.icon width={30} height={30}/>
-                      <span className="text-[23px] font-semibold font-lex  ">{item.title}</span>
+                      <span className="text-18px] font-semibold font-lex  ">{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

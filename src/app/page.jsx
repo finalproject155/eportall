@@ -1,3 +1,4 @@
+
 import React from "react";
 import WelcomeSection from "@/components/dashboard/WelcomeSection";
 import DegreeProgress from "@/components/dashboard/DegreeProgress";
@@ -30,4 +31,5 @@ export default function page() {
     </div>
   );
 }
+
 

@@ -19,7 +19,9 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
+
     <div className=' bg-background w-full h-full flex flex-row items-center justify-between px-4 py-10 shadow z-20'>
+
       <div className='flex flex-row items-center gap-2'>
         <Image src={logo} alt="" width={60} height={60} />
         <h1 className='font-lex text-primary font-bold text-[30px] '>LAUTECH PORTAL</h1>

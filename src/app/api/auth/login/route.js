@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import { supabase } from "@/lib/supabase";
 import bcrypt from "bcryptjs";
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function QuickLinks() {
   const links = [
     { name: "View Results", icon: FileText, href: "#" },
-    { name: "Make a Payment", icon: CreditCard, href: "#" },
+    { name: "Make a Payment", icon: CreditCard, href: "/payment-selection" },
     { name: "Register Courses", icon: PenTool, href: "/course-registration" },
   ];
 

@@ -8,8 +8,7 @@ import { AppSidebar } from "@/layout/sidebar/sidebar";
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
-      <body>
+   
         
     <SidebarProvider>
       <AppSidebar />
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
         </main>
       </SidebarInset>
     </SidebarProvider>
-      </body>
-    </html>
+     
   );
 }

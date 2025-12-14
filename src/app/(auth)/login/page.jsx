@@ -6,9 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import logo from "@/asset/logo.png";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 
-export default function login() {
+export default function Login() {
   const [matric, setMatric] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -40,9 +41,13 @@ export default function login() {
         return;
       }
 
+      toast.success("Login successful");
+
       router.push("/dashboard");
     } catch (err) {
-      setError("Something went wrong. Try again.");
+    //   setError("Something went wrong. Try again.");
+    toast.error("Something went wrong");
+    
     } finally {
       setLoading(false);
     }

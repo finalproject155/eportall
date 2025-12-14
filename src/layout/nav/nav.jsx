@@ -24,7 +24,6 @@ export default function Nav() {
 
       <div className='flex flex-row items-center gap-2'>
         <Image src={logo} alt="" width={60} height={60} />
-        <h1 className='font-lex text-primary font-bold text-[30px] '>LAUTECH PORTAL</h1>
       </div>
 
 

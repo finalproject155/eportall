@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b w-full">
+        <header className="flex h-16 shrink-0  items-center gap-2 border-b w-full">
           <Nav />
         </header>
-        <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+        <main className="flex flex-1 flex-col bg-gray-50 gap-4 p-4 lg:gap-6 lg:p-6">
           {children}
         </main>
       </SidebarInset>

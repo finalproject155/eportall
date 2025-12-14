@@ -21,16 +21,26 @@ const items = [
     icon: Home,
   },
   {
-    title: "Inbox",
-    url: "#",
+    title: "Course",
+    url: "/course-registration",
     icon: Inbox,
   },
   {
-    title: "Calendar",
+    title: "Grade",
     url: "#",
     icon: Calendar,
   },
   {
+    title: "Fees",
+    url: "#",
+    icon: Inbox,
+  },
+   {
+    title: "Swies",
+    url: "#",
+    icon: Inbox,
+  },
+   {
     title: "Search",
     url: "#",
     icon: Search,

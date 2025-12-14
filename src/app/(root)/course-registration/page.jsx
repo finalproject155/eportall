@@ -53,8 +53,8 @@ const page = () => {
   }, [activeFilter]);
 
   return (
-    <div className="bg-gray-50">
-      <div className="mx-auto w-[80%] mt-20">
+    <div>
+      <div className="mx-auto w-full mt-20">
         <div className="mb-10">
           <div className="flex-row sm:flex mb-5 justify-between items-center">
             <h1 className="font-bold text-black text-3xl">

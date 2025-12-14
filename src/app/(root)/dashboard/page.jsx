@@ -8,7 +8,7 @@ import UpcomingDeadlines from "@/app/(root)/dashboard/components/UpcomingDeadlin
 
 export default function page() {
   return (
-    <div className="p-8 bg-gray-50 min-h-screen">
+    <div className=" min-h-screen">
       <div className="w-full mx-auto">
         <WelcomeSection />
         
